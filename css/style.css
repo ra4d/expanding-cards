@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    width: 90%;
+    height: 80%;
+    gap: 24px;
+}
+
+
+.card {
+    background-position: center;
+    background-size: cover;
+    border-radius: 70px;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+
+h3 {
+    color: white;
+    position: relative;
+    width: fit-content;
+    font-size: 26px;
+    top: 90%;
+    left: 3%;
+    opacity: 0;
+}
+
+.active {
+    flex-grow: 1;
+}
+.active h3 {
+    transition: opacity 0.3s ease-in 0.4s;
+    opacity: 1;
+}
+
+
+
